@@ -4,7 +4,7 @@ const  Posts  = ()=>{
     const [data,setData] = useState([])
   
     useEffect(()=>{
-       fetch('http://localhost:5000/posts',{
+       fetch('https://online-voting-system-backend-p62t.onrender.com/posts',{
          
        }).then(res=>res.json())
        .then(result=>{
