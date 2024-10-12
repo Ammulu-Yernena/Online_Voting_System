@@ -55,7 +55,7 @@ const SignUp = () => {
             swal("Error", "Invalid email", "error");
             return;
         }
-        fetch("http://localhost:5000/signup", {
+        fetch("https://online-voting-system-backend-p62t.onrender.com/signup", {
             method: "post",
             headers: {
                 "Content-Type": "application/json"
