@@ -7,7 +7,7 @@ const Home  = ()=>{
     const [data,setData] = useState([])
     const {state} = useContext(UserContext)
     useEffect(()=>{
-       fetch('http://localhost:5000/allpost',{
+       fetch('https://online-voting-system-backend-p62t.onrender.com/allpost',{
            headers:{
                "Authorization":"Bearer "+localStorage.getItem("jwt")
            }
@@ -33,7 +33,7 @@ const Home  = ()=>{
           })
           .then((willDelete) => {
             if (willDelete) {
-                fetch('http://localhost:5000/vote',{
+                fetch('https://online-voting-system-backend-p62t.onrender.com/vote',{
                     method:"put",
                     headers:{
                         "Content-Type":"application/json",
