@@ -23,7 +23,7 @@ const Chart = () => {
     )
 
     useEffect(()=>{
-        fetch('http://localhost:5000/allpost',{
+        fetch('https://online-voting-system-backend-p62t.onrender.com/allpost',{
             headers:{
                 "Authorization":"Bearer "+localStorage.getItem("jwt")
             }
